@@ -1,0 +1,25 @@
+// ***************************************************************************************
+// Variaveis do NavBar
+// ***************************************************************************************
+
+// Tema Ativo
+// 1 - Tema Branco
+// 2 - Tema Preto
+// Qualquer outro valor é o tema personalizado (Preencher valores nas variaveis de cor )
+$navbar-estilo: 1;
+
+// variaveis Personalizaveis para cor do navbar
+$navbar-background: null;
+$navbar-cor: null;
+$navbar-border: null;
+$navbar-hover-cor: null;
+
+// Espessura da linha
+$navbar-espessura-linha: 1px;
+
+// ***************************************************************************************
+// Variaveis do Brand
+// ***************************************************************************************
+
+// tamanho da Fonte
+$navbar-brand-font-size: 30px;

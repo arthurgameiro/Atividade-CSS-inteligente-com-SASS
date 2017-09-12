@@ -1,0 +1,22 @@
+
+@import "brand.scss";
+@import "buttons.scss";
+@import "mxin.scss";
+
+nav {
+
+	padding: 10px 10px 10px 10px;
+	font-family:"Lucida Console", Lucida, Monospace;
+	height: 30px;
+	
+	@include navbar-estilo($navbar-estilo)
+
+}
+
+%nav-link{
+	text-decoration: none;
+}
+
+#clear {
+	clear:both; // Ajusta o tamanho da div "pai" por causa dos float left e right
+}

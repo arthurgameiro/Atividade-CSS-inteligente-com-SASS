@@ -1,0 +1,14 @@
+nav{
+	.nav-conteiner-buttons {
+		width:66%;
+		display: flex;
+		justify-content: right; // Posiciona a direita
+		float: right;
+		.nav-buttons{
+			display: inline-block;
+			text-align: center;
+			padding: 10px 10px 0px 0px;
+
+		}
+	}
+}

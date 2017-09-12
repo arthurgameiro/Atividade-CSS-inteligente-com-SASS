@@ -1,0 +1,39 @@
+
+@mixin navbar-estilo($navbar-estilo: 1){
+
+	@if $navbar-estilo == 1 {
+		@include navbar-atributos(white, black, black)
+		@include navbar-atributos-hover(#20b2aa)
+	}
+	// Preto
+	@else if $navbar-estilo == 2 {
+		@include navbar-atributos()
+		@include navbar-atributos-hover()
+	}
+
+	// Personalizado
+	@else {
+		@include navbar-atributos($navbar-background, $navbar-cor, $navbar-border)
+		@include navbar-atributos-hover($navbar-hover-cor)
+	}
+}
+
+@mixin navbar-atributos($navbar-background: black, $navbar-cor: white, $navbar-border: white){	
+
+	color: $navbar-cor;
+	background-color: $navbar-background;
+	border: $navbar-espessura-linha solid $navbar-border;
+
+	a{
+		color: $navbar-cor;
+		@extend %nav-link;
+	}
+}
+
+@mixin navbar-atributos-hover($navbar-hover-cor: blue){	
+
+	a:hover{
+		color: $navbar-hover-cor;
+		@extend %nav-link;
+	}
+}
